@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta charset="utf-8" >
+<title>MoneyCal</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+ 
+    <link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+    <link rel="stylesheet" type="text/css" href="css/cs-skin-elastic.css" />
+ 
+ </head>
+<body>
+    <form action="cal.php" method="post" onsubmit="return check_data()">
+    <SCRIPT>
+
+    function check_data()
+    { 
+      var num = /^([0-9])+$/;
+
+        if (!(num.test(document.all.check.value)))
+{
+        alert("Please input number");
+        document.all.check.select();
+        return false;
+}
+} 
+</SCRIPT>
+
+ 
+<div id="wrapper"> 
+
+      <div class="Head">Currency Exchange</div>
+        <div class="THB">Amount Thai money (THB)</div>
+          <div id="inputTH"><input type="text" name="THB" id="check" placeholder ="  Input your money (THB)"></div>
+             <br>
+                <select name="currency" class="cs-select cs-skin-elastic">
+                  <option value="" disabled selected class="no">Select your currency</option>
+                  <option value="2" data-class="flag-Japan">Japan (JPY)</option>
+                  <option value="3" data-class="flag-Korea">South Korea (KRW)</option>   
+                  <option value="1" data-class="flag-America">United State of America (USD)</option>              
+                </select> 
+
+<script src="js/classie.js"></script>
+    <script src="js/selectFx.js"></script>
+    <script>
+      (function() {
+        [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {  
+          new SelectFx(el);
+        } );
+      })();
+    </script>
+        <br><br><br>
+        <input type="submit" value="Calculate"></div> 
+</div>
+</body>
+</html>

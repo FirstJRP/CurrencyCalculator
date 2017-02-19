@@ -1,0 +1,132 @@
+@font-face {
+font-family: 'Kanit-Light';
+    src: url(../font/kanit-light_0-webfont.woff2) format('woff2'),
+         url(../font/kanit-light_0-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+font-family: 'Kanit-Medium';
+    src: url(../font/kanit-medium_0-webfont.woff) format('woff2'),
+         url(../font/kanit-medium_0-webfont.woff2) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+font-family: 'Kanit-Regular';
+    src: url(../font/kanit-regular_0-webfont.woff) format('woff2'),
+         url(../font/kanit-regular_0-webfont.woff2) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a {
+	text-decoration: none;
+}
+body{
+  background-image: url(../img/pattern.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#wrapper {
+	 
+	border-radius: 15px;
+	margin: 120px auto;
+
+	width: 700px;
+	height: 400px;
+	background-color: #fff;
+-webkit-box-shadow: 28px 36px 71px -9px rgba(186,184,186,1);
+-moz-box-shadow: 28px 36px 71px -9px rgba(186,184,186,1);
+box-shadow: 28px 36px 71px -9px rgba(186,184,186,1);
+
+ }
+ .Head {
+ 	font-family: 'Kanit-Regular';
+ 	font-size: 24px;
+ 	height: 60px;
+ 	color: #fff;
+ 	background-color: #333366;
+ 	padding-top: 20px;
+ 	text-align: center;
+ }
+#inputTH input {
+	margin-left:220px;
+	padding-left: 15px;
+	font-family: 'Kanit-Light';
+	font-size: 14px;
+	width: 260px;
+	height: 50px;
+ 	border: 1px solid #666699;
+    background: #fff;
+    transition: 0.3s ease-in-out;
+ }
+ #inputTH input:hover{
+ 	border: 1px solid #333366;
+ 	 transition: 0.1s ease-in-out;
+ }
+  #inputTH input:active{
+  	border: 1px solid #333366;
+ 	 transition: 0.1s ease-in-out;
+  }
+
+  .THB {
+ 	font-family: 'Kanit-Light';
+ 	font-size: 18px;
+ 	height: 60px;
+ 	color: #333366;
+ 	margin-top: 20px;
+  
+ 	text-align: center;
+ }
+
+input[type=submit] {
+    font-family: 'Kanit-Light';
+	font-size: 22px;
+	width: 260px;
+	height: 50px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 25px;
+  
+    color: #fff;
+    background-color: #666699;
+     border: none;
+     cursor: pointer;
+     transition: 0.1s ease-in-out;
+}
+input[type=submit]:hover{
+	 background-color: #333366;
+	  transition: 0.1s ease-in-out;
+}
+a input[type=submit]:hover{
+	 background-color: #333366;
+	 
+}
+input[type=submit]:active{
+	background-color: #666699;
+}
+
+#layout{
+	margin-top: 80px;
+	font-size: 18px;
+	text-align: center;
+	color:#9999cc;
+	font-family: 'Kanit-Regular';
+}
+#layout2{
+	font-size: 26px;
+	text-align: center;
+	color:#333366;
+	font-family: 'Kanit-Regular';
+}
+
+
+
+
+ 
